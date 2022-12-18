@@ -1,0 +1,24 @@
+.handContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 120%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 100%;
+  }
+}

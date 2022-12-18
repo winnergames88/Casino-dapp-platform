@@ -1,0 +1,164 @@
+playing-card {
+    --card-size: 2.5rem;
+}
+
+input {
+	border-radius: 3px;
+	border: 1px solid #f1f1f4;
+	background: #f1f2f7;
+}
+
+.start-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	transition: 0.5s;
+}
+
+.start-button:hover {
+	cursor: pointer;
+	color: #e390f5;
+}
+
+.modal-button {
+	background-color: #3686ff;
+	border-radius: 30px;
+	font-size: 16px;
+	width: 150px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.points {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -5px;
+    transform: translateY(1%);
+    display: inline-block;
+}
+
+.gray-pulse:enabled {
+    animation: pulse-gray 2s infinite;
+}
+
+@keyframes pulse-gray {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 #dae0e5;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.blue-pulse:enabled {
+    animation: pulse-blue 2s infinite;
+}
+
+@keyframes pulse-blue {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 #007bff;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.red-pulse:enabled {
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #dc3545;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+body {
+    width: 100vw;
+	height: 100vh;
+	width: 100%;
+	height: 100%;
+}
+
+.nav-buttons {
+	color: black;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.nav-button-main {
+	background-color: #e6eafc;
+	color: #0057D9;
+	padding: 13px 40px;
+	border-radius: 5px;
+	font-weight: 500;
+}
+
+.nav-buttons:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navbar {
+	padding: 10px 50px;
+	width: 100%;
+	background: transparent;
+}
+
+.navbar.active {
+	background: #ffffff;
+	box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+	padding: 10px 15px;
+	border-radius: 10px;
+	color: #707070;
+}
+
+.dropdown-item:hover {
+	color: black;
+}
+
+.x-close {
+	transform: translate(-150%, -10%);
+}
+
+/* .x-close:hover {
+	background-color: white;
+} */

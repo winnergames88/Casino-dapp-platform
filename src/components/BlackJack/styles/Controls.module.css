@@ -1,0 +1,116 @@
+.controlsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 1em 1em 1em;
+}
+
+.betContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0 0.5em;
+  font-size: 100%;
+  padding: 0 0.5em;
+  width: 40%;
+  background: blue;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+}
+
+.input {
+  width: 1px;
+  flex-grow: 1;
+  margin: 0 0 0 0.5em;
+  font-size: 100%;
+  text-align: right;
+  margin: 5px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: blue;
+  color: white;
+}
+
+.inputError {
+  width: 1px;
+  flex-grow: 1;
+  margin: 0 0 0 0.5em;
+  font-size: 100%;
+  text-align: right;
+  margin: 5px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: black;
+  color: red;
+}
+
+.input::-webkit-inner-spin-button, 
+.inputError::-webkit-inner-spin-button {
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.button {
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  width: 300px;
+  height: 50px;
+  background: blue;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttonBack {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: black;
+  background: #b2df28;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color: black;
+    background: white;
+    border: 5px solid black;
+  }
+}
+
+.button:disabled {
+  color: gray;
+  background: rgb(60, 60, 60);
+  border: 5px solid gray;
+}
+
+@media screen and (max-width: 992px) {
+  .betContainer {
+    width: 50%;    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .betContainer {
+    width: 70%;        
+  }
+  .betContainer h4 {
+    font-size: 75%;        
+  }
+  .betContainer input {
+    font-size: 125%;        
+  }
+}
